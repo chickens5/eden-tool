@@ -1,0 +1,51 @@
+:root {
+  /* Nature palette */
+  --green-dark:   #2d6a4f;
+  --green-mid:    #40916c;
+  --green-light:  #b7e4c7;
+  --green-xlight: #d8f3dc;
+  --earth-dark:   #5c3a1e;
+  --earth-mid:    #9c6644;
+  --earth-light:  #d4a574;
+  --cream:        #fdf8f0;
+  --cream-dark:   #f0ebe2;
+  --text:         #3d3830;
+  --text-light:   #6b6355;
+  --text-inv:     #f9f6f1;
+  --border:       #ddd5c8;
+  --border-light: #ede8e0;
+  --shadow-sm:    0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+  --shadow-md:    0 4px 12px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.06);
+  --shadow-lg:    0 12px 32px rgba(0,0,0,.18);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 15px/1.5 var(--sans);
+  color: var(--text);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body { margin: 0; }
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+p { margin: 0; }
+
+button { cursor: pointer; font: inherit; }
+
+img { display: block; }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
