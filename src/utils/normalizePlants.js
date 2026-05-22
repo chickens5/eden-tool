@@ -46,15 +46,17 @@ function coerceBool(val) {
 }
 
 function deriveImagePath(plant) {
-  if (plant.image) return plant.image;
+  if (plant.image) return plant.image.replace(/^\//, '');
   if (!plant.botanical_name) return null;
   // "Aruncus dioicus" → "/plantImgs/aruncus-dioicus.jpg"
   const parts = plant.botanical_name.trim().toLowerCase().split(/\s+/);
   if (parts.length >= 2) {
-    return `/plantImgs/${parts[0]}-${parts[1]}.jpg`;
+    //this allows us to handle cases where there are extra descriptors in the botanical name, like "Carex vulpinoidea 'Aurea'
+
+    return `plantImgs/${parts[0]}-${parts[1]}.jpg`;
   }
-  return `/plantImgs/${parts[0]}.jpg`;
-}
+  return `plantImgs/${parts[0]}.jpg`;
+} 
 
 function extractPollinatorNames(plant) {
   const names = new Set();
