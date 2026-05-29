@@ -44,7 +44,7 @@ function App() {
       <header className="app-header">
         <div className="header-inner">
           <div className="header-brand">
-            <span className="header-title">Eden Plant Tool</span>
+            <span className="header-title" onClick={() => setShowLanding(true)}>Eden Plant Tool</span>
             <span className="header-zone">Zone 7a &mdash; St. Louis, MO</span>
           </div>
           <button

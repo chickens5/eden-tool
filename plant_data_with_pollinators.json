@@ -49,19 +49,6 @@
     "common_name": "Glossy Abelia ",
     "plant_type": "Shrub",
     "fav_pollinator": "Butterfly",
-    "main_pollinator": {
-      "name": "Butterfly",
-      "taxonomy_key": "Butterfly",
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Arthropoda",
-        "class": "Insecta",
-        "order": "Lepidoptera",
-        "family": null,
-        "genus": null,
-        "common_name": "Butterfly"
-      }
-    },
     "pollinators": [
       {
         "name": "Butterfly",
@@ -106,6 +93,8 @@
   {
     "botanical_name": "Arnoglossum atriplicifolium",
     "common_name": "Pale Indian plantain",
+    "image": "/plantImgs/arnoglossum-atriplicifolium.jpg",
+    "description": "Arnoglossum atriplicifolium, commonly called pale Indian plantain, is a tall Missouri native herbaceous perennial which grows 3-6' (less frequently to 8') tall and typically occurs in open and rocky woodlands, thickets, slopes, wet meadows and along streams throughout the State. Features flat-topped clusters (corymbs) of tiny, white tubular flowers atop thick, rigid, leafy flowering stalks rising from the basal foliage. Blooms in summer. Fan-shaped basal leaves (to 12\" wide) are thick, leathery, and coarsely toothed and lobed, somewhat resembling very large sycamore leaves. Stems and lower leaf surfaces are covered with a grayish-white bloom hence the \"pale\" part of the common name. The \"Indian plantain\" part of the common name is in reference to the resemblance of the basal leaves to those of plantains (Plantago spp.) and to the fact that the plant was used medicinally by Native Americans. The genus name Arnoglossum is from the Greek for \"lamb's tongue\" and refers to the shape of the basal leaves.",
     "soil_type": "moist",
     "full_sun": "X",
     "part_shade": "X",
@@ -164,19 +153,6 @@
     "bioswale": true,
     "wildlife_keystone": true,
     "ground_cover": false,
-    "main_pollinator": {
-      "name": "Butterfly",
-      "taxonomy_key": "Butterfly",
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Arthropoda",
-        "class": "Insecta",
-        "order": "Lepidoptera",
-        "family": null,
-        "genus": null,
-        "common_name": "Butterfly"
-      }
-    },
     "pollinators": [
       {
         "name": "Butterfly",
@@ -402,19 +378,6 @@
     "bioswale": true,
     "wildlife_keystone": true,
     "ground_cover": false,
-    "main_pollinator": {
-      "name": "Butterfly",
-      "taxonomy_key": "Butterfly",
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Arthropoda",
-        "class": "Insecta",
-        "order": "Lepidoptera",
-        "family": null,
-        "genus": null,
-        "common_name": "Butterfly"
-      }
-    },
     "pollinators": [
       {
         "name": "Butterfly",
@@ -557,19 +520,6 @@
     "bioswale": true,
     "wildlife_keystone": true,
     "ground_cover": false,
-    "main_pollinator": {
-      "name": "Hummingbird",
-      "taxonomy_key": "Hummingbird",
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Aves",
-        "order": "Apodiformes",
-        "family": "Trochilidae",
-        "genus": null,
-        "common_name": "Hummingbird"
-      }
-    },
     "pollinators": [
       {
         "name": "Hummingbird",
@@ -674,19 +624,6 @@
     "bioswale": true,
     "wildlife_keystone": true,
     "ground_cover": false,
-    "main_pollinator": {
-      "name": "Butterfly",
-      "taxonomy_key": "Butterfly",
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Arthropoda",
-        "class": "Insecta",
-        "order": "Lepidoptera",
-        "family": null,
-        "genus": null,
-        "common_name": "Butterfly"
-      }
-    },
     "pollinators": [
       {
         "name": "Butterfly",
@@ -967,19 +904,6 @@
     "bioswale": true,
     "wildlife_keystone": true,
     "ground_cover": true,
-    "main_pollinator": {
-      "name": "Hummingbird",
-      "taxonomy_key": "Hummingbird",
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Aves",
-        "order": "Apodiformes",
-        "family": "Trochilidae",
-        "genus": null,
-        "common_name": "Hummingbird"
-      }
-    },
     "pollinators": [
       {
         "name": "Hummingbird",
@@ -1073,19 +997,6 @@
     "bioswale": true,
     "wildlife_keystone": true,
     "ground_cover": true,
-    "main_pollinator": {
-      "name": "Hummingbird",
-      "taxonomy_key": "Hummingbird",
-      "taxonomy": {
-        "kingdom": "Animalia",
-        "phylum": "Chordata",
-        "class": "Aves",
-        "order": "Apodiformes",
-        "family": "Trochilidae",
-        "genus": null,
-        "common_name": "Hummingbird"
-      }
-    },
     "pollinators": [
       {
         "name": "Hummingbird",
@@ -1308,11 +1219,14 @@
   {
     "botanical_name": "Cornus drummondii",
     "common_name": "Rough-leaved dogwood",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=295802&isprofile=0&n=1",
+    "image": "/plantImgs/cornus-drummondii.jpg",
+    "description": "Cornus drummondii, commonly called rough-leaved dogwood, is a common, thicket-forming, Missouri-native dogwood that typically grows 6-15’ tall and as wide. Throughout most of its growing range, it is primarily found in moist to wet locations. However in Missouri, it is more often found in dryish soils of rocky woods, glades, thickets and prairies (Steyermark). Common name refers to its elliptic to oval leaves (to 5” long) that are rough above and downy below. Tiny, yellowish-white flowers appear in flat-topped clusters (to 2.5” diameter) in late spring. Flowers lack the showy bracts of flowering dogwood (Cornus florida), being more similar in appearance to the flowers of gray dogwood (Cornus racemosa). Flowers give way to clusters of white drupes which mature in late summer. Fruit is attractive to birds and is generally considered to have as much if not more ornamental interest than the flowers. Twigs are reddish-brown. Fall color is variable, but may include quality shades of purple and red.",
     "soil_type": "moist",
     "full_sun": "X",
     "part_shade": "X",
     "full_shade": "X",
-    "height": "10–15",
+    "height": "6–15",
     "bloom_time": "spring",
     "rain_garden_wet": false,
     "rain_garden_dry": true,
@@ -1886,12 +1800,15 @@
   {
     "botanical_name": "Quercus bicolor",
     "common_name": "Swamp white oak",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=q330",
+    "image":"/plantImgs/quercus-bicolor.jpg",
+    "description": "Quercus bicolor, commonly called swamp white oak, is a medium sized, deciduous tree with a broad, rounded crown and a short trunk which typically grows at a moderate rate to a height of 50-60' (sometimes larger). Leaves are dark, shiny green above and silvery white beneath, with 5-10 rounded lobes or blunt teeth along the margins. Fall color is yellow, but sometimes reddish purple. Insignificant flowers in separate male and female catkins in spring. Fruits are acorns which mature in early fall. Indigenous to north, central and eastern Missouri in moist to swampy locations in bottomlands and lowlands, such as along streams and lakes, valleys, floodplains and at the edge of swamps. Also has surprisingly good drought resistance.",
     "plant_type": "Tree",
     "soil_type": "moist",
     "full_sun": "X",
     "part_shade": "X",
     "full_shade": "X",
-    "height": "40–50",
+    "height": "50-60 ft",
     "bloom_time": "spring",
     "butterfly_garden": true,
     "rain_garden_wet": true,
@@ -1906,6 +1823,9 @@
     "botanical_name": "Quercus macrocarpa",
     "common_name": "Bur oak",
     "plant_type": "Tree",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=a902",
+    "image": "/plantImgs/quercus-macrocarpa.jpg",
+    "description": "Quercus macrocarpa, commonly called bur oak or mossycup oak, is one of the most majestic of the native North American oaks. It is a medium to large sized deciduous oak of the white oak group that typically grows 60-80’ (less frequently to 150’) tall with a broad-spreading, rounded crown. Acorn cups are covered with a mossy scale or bur near the rim, hence the common names. It is native to a variety of habitats in central and eastern North America. Best growth occurs in bottomland soils, particularly in the Ohio River valley. In Missouri, it typically occurs in low woods and stream valleys in the Ozark region, but on dry upland soils in the unglaciated parts of the state north of the Missouri River (Steyermark). Insignificant monoecious yellowish-green flowers in separate male and female catkins appear in spring as the leaves emerge. Fruits are oval acorns (to 1 1/2” long), with fringed, burry cups that extend to approximately 1/2 to 3/4 the acorn length. Acorns are an important source of food for wildlife. Leathery, dark green leaves (6-12” long) with 5-9 rounded lobes are variable in shape, but usually have a pair of deep central sinuses that extend nearly to the midrib giving the leaf a waisted appearance. Fall color is an undistinguished yellow-brown. Twigs sometimes are ridged with corky wings.",
     "soil_type": "moist",
     "full_sun": "X",
     "part_shade": "X",
@@ -1923,12 +1843,15 @@
   {
     "botanical_name": "Quercus phellos",
     "common_name": "Willow oak",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=a191",
+    "image": "/plantImgs/quercus-phellos.jpg",
+    "description": "Quercus phellos, commonly called willow oak, is a medium to large, deciduous oak tree of the red oak group that is noted for its narrow, willow-like leaves and relatively fast growth rate. It is native to portions of the south and eastern United States, from Long Island south along the Coastal Plain and north to the southern Appalachians and Ozarks. It is typically found growing in bottomlands and floodplains, as well as along rivers, streams, and ridges or high flats surrounding swamps and sloughs. Willow oak typically grows 40-75’ tall with an oval to rounded crown, but may reach 100’ in ideal conditions. Smooth-edged, bristle-tipped, narrow, green leaves (to 5” long and 1” wide) are willow-like. Leaves turn an undistinguished yellow-brown or dull gold in fall. Fruits are rounded acorn cups (to 1/2” long). Acorns can be an important source of food for wildlife. Insignificant monoecious yellowish-green flowers in separate male and female catkins appear in spring (April) as the leaves emerge. Dark, irregularly-furrowed trunks (gray to dark gray-brown) develop on mature trees.",
     "plant_type": "Tree",
     "soil_type": "moist",
     "full_sun": "X",
     "part_shade": "X",
     "full_shade": "X",
-    "height": "40–50",
+    "height": "40–75",
     "bloom_time": "spring",
     "rain_garden_wet": true,
     "rain_garden_dry": true,
@@ -2855,12 +2778,15 @@
   {
     "botanical_name": "Corylus americana",
     "common_name": "Hazelnut",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=c350",
+    "image": "/plantImgs/corylus-americana.jpg",
+    "description": "Corylus americana, commonly called American filbert or hazelnut, is a Missouri native, deciduous, rounded, multi-stemmed shrub which typically grows 8-16' tall and occurs statewide in dry or moist thickets, woodlands and wood margins, valleys, uplands and prairies. Monoecious (separate male and female flowers on the same plant). In spring, male flowers appear in showy, 2-3\" long, yellowish brown catkins and female flowers appear in small, reddish, inconspicuous catkins. Female flowers give way to small, egg-shaped, 1/2\" long, edible nuts (maturing July-August) which are encased in leafy, husk-like, ragged-edged bracts. Nuts are similar in flavor to the European filbert, and may be roasted and eaten or ground into flour, but are also commonly left for the squirrels and birds. Ovate, double-toothed, dark green leaves (3-6\" long). Fall color is quite variable, ranging from attractive combinations of orange, rose, purplish red, yellow and green to undistinguished, dull yellowish green.",
     "plant_type": "Shrub",
     "soil_type": "dry",
     "full_sun": "X",
     "part_shade": "X",
     "full_shade": "X",
-    "height": "8–10",
+    "height": "8–16",
     "bloom_time": "spring",
     "ground_cover": false,
     "wildlife_keystone": true,
@@ -2870,6 +2796,7 @@
   {
     "botanical_name": "Euonymus atropurpureus",
     "common_name": "Wahoo",
+    
     "plant_type": "Shrub",
     "soil_type": "dry",
     "full_sun": "X",
@@ -3023,6 +2950,9 @@
   {
     "botanical_name": "Chionanthus virginicus",
     "common_name": "Fringetree",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=c120",
+    "image":"/plantImgs/chionanthus-virginicus.jpg",
+    "description": "Chionanthus virginicus, commonly called fringetree, is a deciduous, Missouri native shrub or small tree with a spreading, rounded habit that typically grows 12-20' tall (to 35' in the wild, however) and most often occurs in rich, moist woods and hillsides, moist stream banks, limestone glade margins and rocky bluffs and ledges. Common name refers to the slightly fragrant, spring-blooming flowers which feature airy, terminal, drooping clusters (4-6\" long) of fringe-like, creamy white petals. Dioecious (separate male and female plants), but also may have perfect flowers on each plant. Male flowers are showier than female flowers. Fertilized perfect or female flowers give way to clusters of olive-like fruits which ripen to a dark, bluish black in late summer and are a food source for birds and wildlife. Wide, spear-shaped leaves (to 8\" long) turn yellow in autumn.",
     "plant_type": "Tree",
     "soil_type": "dry",
     "full_sun": "X",
@@ -3038,22 +2968,28 @@
   {
     "botanical_name": "Cornus alternifolia",
     "common_name": "Pagoda dogwood",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b992",
+    "image": "/plantImgs/cornus-alternifolia.jpg",
+    "description": "Cornus alternifolia is a small deciduous tree or large multi-stemmed shrub that typically grows 15-25’ tall with distinctive tiered/layered horizontal branching which is upward-turned at the tips. It is native to both moist and dry forests, forest margins, stream banks and fields from Newfoundland to Minnesota south to northern Arkansas and through the Appalachians to Georgia and Alabama. Small, fragrant, yellowish-white flowers bloom in flattened cymes (each to 2 1/2\" across) in late spring (May-June). Flowers give way to bluish-black fruits (drupes) on red stalks. Fruits mature in late summer. Elliptic-ovate, medium green leaves (to 3-5” long) turn reddish-purple often tinted yellow or green in fall. Although the leaves of most species of dogwood are opposite, those of pagoda dogwood are alternate, hence the specific epithet and often used common name of alternate-leaf dogwood.",
     "bird_haven": true,
     "plant_type": "Tree",
     "soil_type": "dry",
     "full_sun": "X",
     "part_shade": "X",
     "full_shade": "X",
-    "height": "10–20",
+    "height": "15-25",
     "bloom_time": "spring",
     "ground_cover": false,
     "wildlife_keystone": false,
-    "main_pollinator": null,
+    "main_pollinator": "Butterfl",
     "pollinators": []
   },
   {
     "botanical_name": "Cornus florida",
     "common_name": "Flowering dogwood",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=c280",
+    "image": "/plantImgs/cornus-florida.jpg",
+    "description": "Cornus florida, commonly known as flowering dogwood, is a small deciduous tree that typically grows 15-30’ tall with a low-branching, broadly-pyramidal but somewhat flat-topped habit. It arguably may be the most beautiful of the native American flowering trees. It is native from Maine to southern Ontario to Illinois to Kansas south to Florida, Texas and Mexico. It is the state tree of Missouri and Virginia. It blooms in early spring (April) shortly after, but usually overlapping, the bloom period of the redbuds. The true dogwood flowers are actually tiny, yellowish green and insignificant, being compacted into button-like clusters. However, each flower cluster is surrounded by four showy, white, petal-like bracts which open flat, giving the appearance of a single, large, 3-4” diameter, 4-petaled, white flower. Oval, dark green leaves (3-6” long) turn attractive shades of red in fall. Bright red fruits are bitter and inedible to humans (some authors say poisonous) but are loved by birds. Fruits mature in late summer to early fall and may persist until late in the year.",
     "plant_type": "Tree",
     "soil_type": "dry",
     "full_sun": "X",
@@ -3098,12 +3034,15 @@
   {
     "botanical_name": "Ilex opaca",
     "common_name": "American holly",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=k640",
+    "description": "Ilex opaca, commonly called American holly, is an upright, pyramidal, evergreen tree that slowly matures to 15-30' in cultivation, but may reach 50' tall in the wild. It is native to the eastern and central U.S., most frequently found in moist woods, forest bottomlands and swamp peripheries plus some coastal dunes (e.g., Cape Cod down the Atlantic Coast) from Massachusetts to West Virginia to Ohio to southeastern Missouri south to Texas and Florida. This species is easily identified because it is the only native U.S. holly with spiny green leaves and bright red berries. This is the Christmas holly whose berry-laden boughs are typically collected at Christmas time each year for ornamentation (decking the halls as it were). Thick, leathery, deep green leaves (2-4\" long) have spiny marginal teeth. Species is dioecious (male and female flowers are on separate trees). Greenish-white flowers bloom May-June (male flowers in 3-12 flowered clusters and female flowers solitary or in 2s or 3s). Bright red or orange fruits (drupes to 1/4- 1/2\" diameter) ripen in fall on pollinated female trees, and persist on the tree through winter. Birds love the fruit.",
+    "image": "/plantImgs/ilex-opaca.jpg",
     "plant_type": "Tree",
     "soil_type": "dry",
     "full_sun": "X",
     "part_shade": "X",
     "full_shade": "X",
-    "height": "10–40",
+    "height": "15-30",
     "bloom_time": "summer",
     "ground_cover": false,
     "wildlife_keystone": false,
@@ -3161,6 +3100,9 @@
   {
     "botanical_name": "Quercus alba",
     "common_name": "White oak",
+    "url": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=l930",
+    "image": "/plantImgs/quercus-alba.jpg",
+    "description": "Quercus alba, commonly called white oak, is a large deciduous Missouri native tree of the white oak group. It typically occurs in dry upland slopes and ledges as well as lowland valleys and ravines throughout the State. Grows to 50-80' tall in cultivation and taller (to 100') in the wild. Pyramidal when young, but matures into a substantial tree with a wide-spreading, rounded crown. Insignificant yellowish-green flowers in separate male and female catkins appear in spring shortly after the leaves emerge. Fruits are oval acorns (to 3/4\" long) with warty-scaled cups. Leaves (4-9\" long) have 7 to 9 deep rounded lobes. Leaves emerge pinkish in spring, but mature to dark green. Variable fall color ranges from uninteresting browns to quality shades of dark red. White oak grows over much of eastern North America and is an important hardwood timber tree. Widely used in landscapes, but slow growth rate and large size has somewhat tempered its popularity.",
     "plant_type": "Tree",
     "soil_type": "dry",
     "full_sun": "X",
@@ -3177,6 +3119,9 @@
   {
     "botanical_name": "Quercus muehlenbergii",
     "common_name": "Chinkapin oak",
+    "url":"https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=a903",
+    "description": "Quercus muehlenbergii, commonly called Chinkapin (or Chinquapin) oak, is a medium sized deciduous oak of the white oak group that typically grows 40-60’ (less frequently to 80’) tall with an open globular crown. It is native to central and eastern North America where it is typically found on dry upland sites often in rocky, alkaline soils. Insignificant monoecious yellowish-green flowers in separate male and female catkins appear in spring as the leaves emerge. Fruits are small oval acorns (to 3/4” long), with scaly cups that extend to approximately 1/2 the acorn length. Acorns are valued food for a variety of wildlife. Narrow, oblong-lanceolate, shiny green leaves (4-7” long) have coarse marginal teeth. Leaves somewhat resemble the leaves of chestnut (Castanea) whose nut is sometimes called a chinquapin, hence the common name of this oak whose acorn is sweet and edible. Also sometimes commonly called yellow chestnut oak. Fall color is variable, but usually undistinguished shades of yellow and brown.",
+    "image": "/plantImgs/quercus-muehlenbergii.jpg",
     "plant_type": "Tree",
     "soil_type": "dry",
     "full_sun": "X",

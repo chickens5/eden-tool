@@ -159,7 +159,7 @@ export default function PlantModal({ plant, onClose }) {
             {plant.description && (
               <div className="modal-section">
                 <h3 className="modal-section-title">About</h3>
-                <p className="modal-description">{plant.description}</p>
+             <dd>{plant.description.length > 100 ? `${plant.description.slice(0, 500)}...` : plant.description}</dd>
               </div>
             )}
 
