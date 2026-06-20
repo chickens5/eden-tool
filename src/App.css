@@ -1,24 +1,73 @@
-﻿/* ============================================================
+﻿
+/* YO FADDA */
+
+
+.eden-header {
+  padding: 16px 32px;
+  background-color: var(--green-mid);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.nav-button {
+
+  display: inline-block;
+  padding: 14px 40px;
+  background: var(--green-mid);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: .3px;
+  transition: background .18s, transform .18s;  
+
+}
+
+.nav-button:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+}
+.nav-button:focus-visible {
+  outline: 2px solid var(--green-light);
+  outline-offset: 3px;
+}
+
+/* ============================================================
    LANDING PAGE
    ============================================================ */
 
+   /* landing will hold our blog, art, and other content sections for the landing page */
 .landing {
-  position: fixed;
-  inset: 0;
+  position: relative;
+  min-height: 100vh;
+  background: url('/cover.gif') fixed center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-header {
+  width: 100%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 40px 32px;
+  min-height: 300px;
 }
 
-.landing-bg {
-  position: absolute;
-  inset: 0;
-  background: url('/cover.gif') center center / cover no-repeat;
-  /* dim the gif so text stays legible */
-  filter: brightness(0.55);
-  z-index: 0;
+
+
+.ascii-text-container {
+  width: 100%;
+  height: 100%;
 }
+
+
 
 .landing-content {
   position: relative;
@@ -27,6 +76,7 @@
   padding: 40px 32px;
   max-width: 520px;
   width: 100%;
+  background: rgba(0,0,0,0.4); /* add a subtle overlay to improve text readability */
 }
 
 .landing-zone {
@@ -39,12 +89,17 @@
 }
 
 .landing-title {
+  position: absolute;
+  z-index: 10;
   font-size: clamp(36px, 6vw, 64px);
   font-weight: 700;
-  color: #fff;
   letter-spacing: -1px;
   line-height: 1.1;
-  margin-bottom: 20px;
+  color: #fff;
+  margin: 0;
+  padding: 0 16px;
+  text-align: center;
+  max-width: 90%;
 }
 
 .landing-sub {
@@ -89,15 +144,22 @@
 
 /* ============================================================
    HEADER
+
+   app header should provide a consistent top navigation area for the application, 
+   including branding, and navigation leaving plenty of room for the art and other features.
    ============================================================ */
 
 .app-header {
-  background: var(--green-dark);
-  color: var(--text-inv);
-  position: sticky;
-  top: 0;
-  z-index: 200;
-  box-shadow: var(--shadow-md);
+  padding: 16px 32px;
+  background-color: var(--green-mid);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .header-inner {
@@ -116,9 +178,30 @@
   gap: 12px;
 }
 
+.back-button {
+  background: #f38a00;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border-radius: 4px;
+  color: var(--text-inv);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.back-button:hover {
+  background: #f38a00ab;
+  opacity: 0.89;
+}
+
 .header-title {
-  font-size: 18px;
+  font-size: 23.3px;
   font-weight: 700;
+  border: 1.66px solid #fff9c4;
+  padding: 4px 8px;
+  margin: 4px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   letter-spacing: -0.3px;
   color: var(--text-inv);
 }
