@@ -24,12 +24,25 @@ function App() {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleCardClick = (cardIndex) => {
+    // External links — open in new tab
+    if (cardIndex === 1) {
+      window.open('https://chickens5.github.io/barista/', '_blank', 'noopener,noreferrer');
+      return;
+    }
+    if (cardIndex === 4) {
+      window.open('https://github.com/chickens5', '_blank', 'noopener,noreferrer');
+      return;
+    }
+    if (cardIndex === 5) {
+      window.open('https://github.com/chickens5/grimlock', '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    // Internal views
     let newView = null;
     if (cardIndex === 0) newView = 'eden-tool';
     else if (cardIndex === 2) newView = 'blog';
     else if (cardIndex === 3) newView = 'us-reparations';
-    else if (cardIndex === 4) newView = 'eden-game';
-    else if (cardIndex === 5) newView = 'grimlock';
 
     if (newView) {
       setIsTransitioning(true);

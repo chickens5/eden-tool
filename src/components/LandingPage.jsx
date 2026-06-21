@@ -1,6 +1,7 @@
 import { useRef, useEffect, useCallback, useState } from 'react';
 import { gsap } from 'gsap';
 import './Landing.css';
+import Strands from './Strands';
 
 
 const DEFAULT_PARTICLE_COUNT = 24;
@@ -98,6 +99,7 @@ const ParticleCard = ({
   const memoizedParticles = useRef([]);
   const particlesInitialized = useRef(false);
   const magnetismAnimationRef = useRef(null);
+  const touchStartY = useRef(0);
 
   const initializeParticles = useCallback(() => {
     if (particlesInitialized.current || !cardRef.current) return;
@@ -312,7 +314,11 @@ const ParticleCard = ({
       className={`${className} particle-container`}
       style={{ ...style, position: 'relative', overflow: 'hidden' }}
       onClick={() => onCardClick && onCardClick(cardIndex)}
-      onTouchEnd={(e) => { e.preventDefault(); onCardClick && onCardClick(cardIndex); }}
+      onTouchStart={(e) => { touchStartY.current = e.touches[0].clientY; }}
+      onTouchEnd={(e) => {
+        const dy = Math.abs(e.changedTouches[0].clientY - touchStartY.current);
+        if (dy < 10) { onCardClick && onCardClick(cardIndex); }
+      }}
     >
       {children}
     </div>
@@ -494,7 +500,7 @@ const MagicBento = ({
     <>
 <div className='landing-header'>
   <div className='landing-header'>
-    <h1 className ='landing-title'>Welcome to "Eden!"</h1>
+
 
 
         </div>
@@ -612,7 +618,11 @@ const MagicBento = ({
               key={index}
               {...cardProps}
               onClick={handleCardInteraction}
-              onTouchEnd={handleCardInteraction}
+              onTouchStart={(e) => { e.currentTarget._tsy = e.touches[0].clientY; }}
+              onTouchEnd={(e) => {
+                const dy = Math.abs(e.changedTouches[0].clientY - (e.currentTarget._tsy || 0));
+                if (dy < 10) handleCardInteraction(e);
+              }}
               onMouseMove={(e) => {
                 const el = e.currentTarget;
                 if (shouldDisableAnimations) return;
