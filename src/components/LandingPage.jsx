@@ -247,7 +247,6 @@ const ParticleCard = ({
     };
 
     const handleClick = e => {
-      // Allow clicks on mobile (no fancy ripple on mobile, but always navigate)
       const shouldRipple = clickEffect && !disableAnimations;
 
       if (shouldRipple) {
@@ -279,10 +278,7 @@ const ParticleCard = ({
 
         gsap.fromTo(
           ripple,
-          {
-            scale: 0,
-            opacity: 1
-          },
+          { scale: 0, opacity: 1 },
           {
             scale: 1,
             opacity: 0,
@@ -292,18 +288,13 @@ const ParticleCard = ({
           }
         );
       }
-
-      // Always navigate, regardless of desktop/mobile
-      if (onCardClick) {
-        onCardClick(cardIndex);
-      }
+      // Navigation is handled by React onClick/onTouchEnd props
     };
 
     element.addEventListener('mouseenter', handleMouseEnter);
     element.addEventListener('mouseleave', handleMouseLeave);
     element.addEventListener('mousemove', handleMouseMove);
     element.addEventListener('click', handleClick);
-    element.addEventListener('touchend', handleClick);
 
     return () => {
       isHoveredRef.current = false;
@@ -311,7 +302,6 @@ const ParticleCard = ({
       element.removeEventListener('mouseleave', handleMouseLeave);
       element.removeEventListener('mousemove', handleMouseMove);
       element.removeEventListener('click', handleClick);
-      element.removeEventListener('touchend', handleClick);
       clearAllParticles();
     };
   }, [animateParticles, clearAllParticles, disableAnimations, enableTilt, enableMagnetism, clickEffect, glowColor, onCardClick, cardIndex]);
@@ -321,6 +311,8 @@ const ParticleCard = ({
       ref={cardRef}
       className={`${className} particle-container`}
       style={{ ...style, position: 'relative', overflow: 'hidden' }}
+      onClick={() => onCardClick && onCardClick(cardIndex)}
+      onTouchEnd={(e) => { e.preventDefault(); onCardClick && onCardClick(cardIndex); }}
     >
       {children}
     </div>
