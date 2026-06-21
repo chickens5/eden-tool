@@ -16,6 +16,9 @@
   padding: 0.75em;
   max-width: 54em;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .magic-bento-card {
@@ -34,6 +37,11 @@
   font-weight: 300;
   overflow: hidden;
   transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
 
   --glow-x: 50%;
   --glow-y: 50%;
@@ -44,6 +52,19 @@
 .magic-bento-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.magic-bento-card:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  /* iOS and touch devices - add visual feedback on touch */
+  .magic-bento-card:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
 }
 
 .magic-bento-card__header,

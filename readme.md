@@ -1,6 +1,11 @@
 ``
-npm install + gsap + three
+npm install + gsap + three + gh-pages + ogl
 
+``
+
+# EDEN
+
+This React webapp is to show off my projects and passion for Sustainability.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

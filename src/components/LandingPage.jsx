@@ -28,9 +28,9 @@ const cardData = [
   },
   {
     color: '#63723f',
-    title: 'Automation',
-    description: 'Streamline workflows',
-    label: 'Efficiency'
+    title: 'REPARATIONS',
+    description: 'US & you know who are criminals...',
+    label: 'REPARATIONS'
   },
   {
     title: 'EdenGame',
@@ -247,49 +247,53 @@ const ParticleCard = ({
     };
 
     const handleClick = e => {
-      if (!clickEffect) return;
+      // Allow clicks on mobile (no fancy ripple on mobile, but always navigate)
+      const shouldRipple = clickEffect && !disableAnimations;
 
-      const rect = element.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+      if (shouldRipple) {
+        const rect = element.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-      const maxDistance = Math.max(
-        Math.hypot(x, y),
-        Math.hypot(x - rect.width, y),
-        Math.hypot(x, y - rect.height),
-        Math.hypot(x - rect.width, y - rect.height)
-      );
+        const maxDistance = Math.max(
+          Math.hypot(x, y),
+          Math.hypot(x - rect.width, y),
+          Math.hypot(x, y - rect.height),
+          Math.hypot(x - rect.width, y - rect.height)
+        );
 
-      const ripple = document.createElement('div');
-      ripple.style.cssText = `
-        position: absolute;
-        width: ${maxDistance * 2}px;
-        height: ${maxDistance * 2}px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.2) 30%, transparent 70%);
-        left: ${x - maxDistance}px;
-        top: ${y - maxDistance}px;
-        pointer-events: none;
-        z-index: 1000;
-      `;
+        const ripple = document.createElement('div');
+        ripple.style.cssText = `
+          position: absolute;
+          width: ${maxDistance * 2}px;
+          height: ${maxDistance * 2}px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.2) 30%, transparent 70%);
+          left: ${x - maxDistance}px;
+          top: ${y - maxDistance}px;
+          pointer-events: none;
+          z-index: 1000;
+        `;
 
-      element.appendChild(ripple);
+        element.appendChild(ripple);
 
-      gsap.fromTo(
-        ripple,
-        {
-          scale: 0,
-          opacity: 1
-        },
-        {
-          scale: 1,
-          opacity: 0,
-          duration: 0.8,
-          ease: 'power2.out',
-          onComplete: () => ripple.remove()
-        }
-      );
+        gsap.fromTo(
+          ripple,
+          {
+            scale: 0,
+            opacity: 1
+          },
+          {
+            scale: 1,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power2.out',
+            onComplete: () => ripple.remove()
+          }
+        );
+      }
 
+      // Always navigate, regardless of desktop/mobile
       if (onCardClick) {
         onCardClick(cardIndex);
       }
@@ -299,6 +303,7 @@ const ParticleCard = ({
     element.addEventListener('mouseleave', handleMouseLeave);
     element.addEventListener('mousemove', handleMouseMove);
     element.addEventListener('click', handleClick);
+    element.addEventListener('touchend', handleClick);
 
     return () => {
       isHoveredRef.current = false;
@@ -306,9 +311,10 @@ const ParticleCard = ({
       element.removeEventListener('mouseleave', handleMouseLeave);
       element.removeEventListener('mousemove', handleMouseMove);
       element.removeEventListener('click', handleClick);
+      element.removeEventListener('touchend', handleClick);
       clearAllParticles();
     };
-  }, [animateParticles, clearAllParticles, disableAnimations, enableTilt, enableMagnetism, clickEffect, glowColor]);
+  }, [animateParticles, clearAllParticles, disableAnimations, enableTilt, enableMagnetism, clickEffect, glowColor, onCardClick, cardIndex]);
 
   return (
     <div
@@ -494,8 +500,12 @@ const MagicBento = ({
 
   return (
     <>
-<div className='popout'>
-        <b style={{ color: 'white' }}>Welcome to Eden! Click on a box below to navigate</b>
+<div className='landing-header'>
+  <div className='landing-header'>
+    <h1 className ='landing-title'>Welcome to "Eden!"</h1>
+
+
+        </div>
         </div>
       {enableSpotlight && (
         <GlobalSpotlight
@@ -543,120 +553,128 @@ const MagicBento = ({
             );
           }
 
+          const handleCardInteraction = (e) => {
+            // Allow clicks on mobile (no fancy ripple, but navigate)
+            const shouldRipple = clickEffect && !shouldDisableAnimations;
+            const el = e.currentTarget;
+
+            if (shouldRipple) {
+              const rect = el.getBoundingClientRect();
+              
+              // Get coordinates - handle both click and touch events
+              let x, y;
+              if (e.touches && e.touches.length > 0) {
+                x = e.touches[0].clientX - rect.left;
+                y = e.touches[0].clientY - rect.top;
+              } else {
+                x = e.clientX - rect.left;
+                y = e.clientY - rect.top;
+              }
+
+              const maxDistance = Math.max(
+                Math.hypot(x, y),
+                Math.hypot(x - rect.width, y),
+                Math.hypot(x, y - rect.height),
+                Math.hypot(x - rect.width, y - rect.height)
+              );
+
+              const ripple = document.createElement('div');
+              ripple.style.cssText = `
+                position: absolute;
+                width: ${maxDistance * 2}px;
+                height: ${maxDistance * 2}px;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.2) 30%, transparent 70%);
+                left: ${x - maxDistance}px;
+                top: ${y - maxDistance}px;
+                pointer-events: none;
+                z-index: 1000;
+              `;
+
+              el.appendChild(ripple);
+
+              gsap.fromTo(
+                ripple,
+                {
+                  scale: 0,
+                  opacity: 1
+                },
+                {
+                  scale: 1,
+                  opacity: 0,
+                  duration: 0.8,
+                  ease: 'power2.out',
+                  onComplete: () => ripple.remove()
+                }
+              );
+            }
+
+            // Always navigate, regardless of platform
+            if (onCardClick) {
+              onCardClick(index);
+            }
+          };
+
           return (
             <div
               key={index}
               {...cardProps}
-              ref={el => {
-                if (!el) return;
+              onClick={handleCardInteraction}
+              onTouchEnd={handleCardInteraction}
+              onMouseMove={(e) => {
+                const el = e.currentTarget;
+                if (shouldDisableAnimations) return;
 
-                const handleMouseMove = e => {
-                  if (shouldDisableAnimations) return;
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
 
-                  const rect = el.getBoundingClientRect();
-                  const x = e.clientX - rect.left;
-                  const y = e.clientY - rect.top;
-                  const centerX = rect.width / 2;
-                  const centerY = rect.height / 2;
+                if (enableTilt) {
+                  const rotateX = ((y - centerY) / centerY) * -10;
+                  const rotateY = ((x - centerX) / centerX) * 10;
+                  gsap.to(el, {
+                    rotateX,
+                    rotateY,
+                    duration: 0.1,
+                    ease: 'power2.out',
+                    transformPerspective: 1000
+                  });
+                }
 
-                  if (enableTilt) {
-                    const rotateX = ((y - centerY) / centerY) * -10;
-                    const rotateY = ((x - centerX) / centerX) * 10;
-                    gsap.to(el, {
-                      rotateX,
-                      rotateY,
-                      duration: 0.1,
-                      ease: 'power2.out',
-                      transformPerspective: 1000
-                    });
-                  }
+                if (enableMagnetism) {
+                  const magnetX = (x - centerX) * 0.05;
+                  const magnetY = (y - centerY) * 0.05;
+                  gsap.to(el, {
+                    x: magnetX,
+                    y: magnetY,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                  });
+                }
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget;
+                if (shouldDisableAnimations) return;
 
-                  if (enableMagnetism) {
-                    const magnetX = (x - centerX) * 0.05;
-                    const magnetY = (y - centerY) * 0.05;
-                    gsap.to(el, {
-                      x: magnetX,
-                      y: magnetY,
-                      duration: 0.3,
-                      ease: 'power2.out'
-                    });
-                  }
-                };
+                if (enableTilt) {
+                  gsap.to(el, {
+                    rotateX: 0,
+                    rotateY: 0,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                  });
+                }
 
-                const handleMouseLeave = () => {
-                  if (shouldDisableAnimations) return;
-
-                  if (enableTilt) {
-                    gsap.to(el, {
-                      rotateX: 0,
-                      rotateY: 0,
-                      duration: 0.3,
-                      ease: 'power2.out'
-                    });
-                  }
-
-                  if (enableMagnetism) {
-                    gsap.to(el, {
-                      x: 0,
-                      y: 0,
-                      duration: 0.3,
-                      ease: 'power2.out'
-                    });
-                  }
-                };
-
-                const handleClick = e => {
-                  if (!clickEffect || shouldDisableAnimations) return;
-
-                  const rect = el.getBoundingClientRect();
-                  const x = e.clientX - rect.left;
-                  const y = e.clientY - rect.top;
-
-                  const maxDistance = Math.max(
-                    Math.hypot(x, y),
-                    Math.hypot(x - rect.width, y),
-                    Math.hypot(x, y - rect.height),
-                    Math.hypot(x - rect.width, y - rect.height)
-                  );
-
-                  const ripple = document.createElement('div');
-                  ripple.style.cssText = `
-                    position: absolute;
-                    width: ${maxDistance * 2}px;
-                    height: ${maxDistance * 2}px;
-                    border-radius: 50%;
-                    background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.2) 30%, transparent 70%);
-                    left: ${x - maxDistance}px;
-                    top: ${y - maxDistance}px;
-                    pointer-events: none;
-                    z-index: 1000;
-                  `;
-
-                  el.appendChild(ripple);
-
-                  gsap.fromTo(
-                    ripple,
-                    {
-                      scale: 0,
-                      opacity: 1
-                    },
-                    {
-                      scale: 1,
-                      opacity: 0,
-                      duration: 0.8,
-                      ease: 'power2.out',
-                      onComplete: () => ripple.remove()
-                    }
-                  );
-
-                  if (onCardClick) {
-                    onCardClick(index);
-                  }
-                };
-
-                el.addEventListener('mousemove', handleMouseMove);
-                el.addEventListener('mouseleave', handleMouseLeave);
-                el.addEventListener('click', handleClick);
+                if (enableMagnetism) {
+                  gsap.to(el, {
+                    x: 0,
+                    y: 0,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                  });
+                }
               }}
             >
               <div className="magic-bento-card__header">
