@@ -1,0 +1,49 @@
+A New Age of Misinformation &
+How We “Learned” to Stop Thinking and Deciding
+Gabriel Jackson
+UMSL Computing Technology 26’ 
+
+Abstract
+
+Today is June 13th, 2026. 
+
+The truth continues to lose its sanctity as instigators manipulate information to create conflicts between the very people who must work together. The president is a pedophile, war criminal, 
+
+the Nation it comes from a Machine that can only algorithmize correctly.
+
+What a 1909 short story got right about AI, and why our complacency is the real danger
+In 1909, E.M. Forster published "The Machine Stops," a story about people who live in isolated underground cells where a vast Machine meets their every need. They claim the surface is inhabitable and only communicate through screens. The same goes for learning, in which they only listen to what the Machine algorithmizes based on the dozens of generations interpretation of someone else's idea.
+It is a larger anecdote that attests to how humans learn: through each other. Although a Machine can accomplish this through algorithms, it only decreases in performance as time goes on. If we rely on this technology to serve as the backbone to our education and infrastructure, the day will come when the Machine will recommend to centralize and we will not be educated enough to disagree. 
+A be most likely beforehand, and they come to revere the Machine that thinks and provides for them. When it finally breaks, they die — not because the breakdown is violent, but because they have forgotten how to live without it.
+We tend to read that as a warning about the day the system fails. I think the more frightening reading is the opposite. The danger isn't that the Machine stops. It's that it keeps running perfectly, while the people inside it slowly forget how to think — and a very small number of hands decide what it thinks for.
+We are closer to that story than most people are willing to admit, and the comfort with which we're walking into it is the most alarming part.
+The faculty being outsourced has moved inward
+Offloading our thinking to tools is not new. Socrates worried that writing would destroy memory. The calculator, the printing press, GPS — each one atrophied some skill we used to carry in our heads, and civilization survived. So the reflex to panic should be checked against a 2,500-year track record of being basically fine.
+But the boundary just moved. The calculator took the mechanics of arithmetic and left you the judgment — you still decided which equation to set up. Large language models increasingly absorb the judgment itself: the synthesis, the framing, the part we used to just call thinking. The faculty being dulled is no longer at the edge of cognition. It's at the center.
+You can feel this already. Students who reach for a model before forming a thought. Professionals who ship its first draft because it's good enough. Each individual instance is harmless. The aggregate is a population that is slowly losing the muscle for original reasoning, precisely because the tool is reliable. Reliability is what makes us stop practicing the fallback.
+The loop that thins the signal
+There's a second, newer problem that has no historical precedent. Writing never trained on writing in a way that depleted it; humans kept generating fresh, first-hand experience, and the record accumulated it. The loop stayed open.
+LLMs are trained on human output. But humans increasingly produce that output with LLMs, so the next training set is partly machine-generated. Train a model on the exhaust of earlier models and quality degrades — researchers call it model collapse. The system converges toward its own average and loses the ability to produce anything genuinely new. It can recombine the past beautifully. It cannot exceed the distribution it was trained on.
+Forster saw this too. In the story, a lecturer instructs his audience to distrust first-hand ideas and to prefer ones received tenth-hand — an idea about an idea about an idea, with all the messy original observation strained out. He frames the loss of contact with reality as a refinement. That is model collapse described as a virtue, a century before the architecture existed to make it literal. Forster's people didn't forget how to add. They lost the capacity to generate, because their whole culture became commentary on commentary.
+A world that defers to recombination of its own past doesn't get a dramatic shutdown. It gets stasis dressed as efficiency. The Machine runs perfectly, and nothing new comes out.
+The same abdication, at the end of a rifle
+Here is where this stops being abstract, because the abdication of judgment we're describing is already happening at the highest possible stakes — and it reveals who the technology is actually being built to serve.
+During the war in Gaza, Israeli intelligence officers told the outlets +972 Magazine and Local Call — reporting later carried by the Guardian — that the military used an AI system named Lavender to generate a list of as many as 37,000 people marked as targets. According to those sources, operators treated the system's output essentially as a human decision would be treated, with sweeping approval to act on its lists and no requirement to examine why the machine flagged a given person. They reportedly spent around 20 seconds signing off on a strike — knowing the system misidentified targets roughly 10 percent of the time. (The Israeli military disputes this characterization, saying the tools only assist human analysts.)
+Strip away the stakes and it is the exact same mechanism as the student who ships the first draft: a human deferring to a system's output because the system is fast and confident, and because checking is hard. The difference is that at one end you get a worse essay, and at the other end you get a dead family. Automating judgment is dangerous everywhere. It is monstrous when the judgment is who lives.
+And these are not separate technologies for separate purposes. Palantir — one company — holds contracts spanning military targeting abroad, a reported $30 million ICE platform built to identify, track, and deport people inside the United States, and a 10-year US Army deal worth up to $10 billion. Reporting by the New York Times found it had taken over $113 million in federal contracts under the current administration to help centralize data on American citizens. The same class of system marketed as a battlefield tool is being repurposed for domestic surveillance and policing — which is the entire point. The investment was never primarily about serving communities. It was about control, and control scales.
+This was a choice, and choices can be made differently
+None of this is inevitable, and saying so is not naive — it's the only useful thing to say. The same techniques routing money into targeting and surveillance can model the climate, accelerate medicine, and put real analytical power in the hands of small communities and researchers. That work is real. It is simply being starved of attention and capital while the dominating applications get the billions, because domination is more profitable and more concentrated than service.
+So the complacency is the crisis. A technology this powerful will be shaped by whoever bothers to shape it. Right now that's a handful of firms and the states that contract them, and the rest of us are the underground population — comfortable, provided for, and quietly losing both the habit of independent thought and any say over what the Machine is for.
+Forster's people got a clean ending: the Machine stopped, and the survivors were forced to relearn how to live. We may not get that mercy. Our version runs smoothly, distributes the failure, and never delivers the wake-up call. The way out isn't to smash the Machine. It's to refuse the role the Machine assigns us — to keep thinking for ourselves so we still can, to demand that the systems making consequential decisions be accountable to the people they decide about, and to insist that something this powerful serve the many instead of the few.
+The Machine doesn't have to stop. We have to.
+
+Sources for the factual claims
+Yuval Abraham, "'Lavender': The AI machine directing Israel's bombing spree in Gaza," +972 Magazine / Local Call (2024); corroborating coverage in The Guardian and TIME.
+IDF response disputing the characterization (statement to +972 / Guardian, 2024).
+"ICE to Use ImmigrationOS by Palantir," American Immigration Council (2025); $30M ICE contract.
+"Inside Palantir," BBC Science Focus (2026); 10-year US Army contract up to $10bn.
+New York Times reporting on Palantir federal contracts (>$113M) and data centralization (2025).
+Amnesty International investigation into Palantir surveillance tooling (2025).
+E.M. Forster, "The Machine Stops" (1909).
+On model collapse: Shumailov et al., "The Curse of Recursion / model collapse" (and subsequent replications) — for the technical claim about training on synthetic data.
+
